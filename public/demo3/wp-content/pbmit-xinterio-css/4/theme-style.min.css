@@ -1,0 +1,534 @@
+:root {
+    --pbmit-xinterio-global-color: #bb9a65;
+    --pbmit-xinterio-secondary-color: #403226;
+    --pbmit-xinterio-gradient-color-first: #bb9a65;
+    --pbmit-xinterio-gradient-color-last: #baae9e;
+    --pbmit-xinterio-logo-height: 30px;
+    --pbmit-xinterio-sticky-logo-height: 30px;
+    --pbmit-xinterio-responsive-logo-height: 30px;
+    --pbmit-xinterio-link-color-normal: #403226;
+    --pbmit-xinterio-link-color-hover: #bb9a65;
+    --pbmit-xinterio-body-bg-color: #fff;
+    --pbmit-xinterio-white-color: #fff;
+    --pbmit-xinterio-light-bg-color: #f6f6f6;
+    --pbmit-xinterio-blackish-color: #403226;
+    --pbmit-xinterio-blackish-bg-color: #403226;
+    --pbmit-xinterio-preheader-bgcolor-custom: #fff;
+    --pbmit-xinterio-header-height: 85px;
+    --pbmit-xinterio-header-background-color: #fff;
+    --pbmit-xinterio-sticky-header-height: 90px;
+    --pbmit-xinterio-sticky-header-background-color: #fff;
+    --pbmit-xinterio-main-menu-typography-font-family: Space Grotesk;
+    --pbmit-xinterio-main-menu-typography-variant: 600;
+    --pbmit-xinterio-main-menu-typography-font-size: 16px;
+    --pbmit-xinterio-main-menu-typography-line-height: 24px;
+    --pbmit-xinterio-main-menu-typography-letter-spacing: 0;
+    --pbmit-xinterio-main-menu-typography-color: #403226;
+    --pbmit-xinterio-main-menu-typography-text-transform: none;
+    --pbmit-xinterio-main-menu-typography-font-style: normal;
+    --pbmit-xinterio-main-menu-typography-font-weight: 600;
+    --pbmit-xinterio-main-menu-sticky-color: #403226;
+    --pbmit-xinterio-main-menu-sticky-active-color: #bb9a65;
+    --pbmit-xinterio-titlebar-height: 450px;
+    --pbmit-xinterio-footer-1-col-width: 33%;
+    --pbmit-xinterio-footer-2-col-width: 34%;
+    --pbmit-xinterio-footer-3-col-width: 34%;
+    --pbmit-xinterio-footer-4-col-width: hide%;
+    --pbmit-xinterio-global-color-rgb: 187, 154, 101;
+    --pbmit-xinterio-secondary-color-rgb: 64, 50, 38;
+    --pbmit-xinterio-white-color-rgb: 255, 255, 255;
+    --pbmit-xinterio-light-bg-color-rgb: 246, 246, 246;
+    --pbmit-xinterio-blackish-color-rgb: 64, 50, 38;
+    --pbmit-xinterio-blackish-bg-color-rgb: 64, 50, 38;
+    --pbmit-xinterio-main-menu-typography-color-rgb: 64, 50, 38;
+    --pbmit-xinterio-titlebar-breadcrumb-typography-color-rgb: 255, 255, 255
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li.mega-menu-flyout>ul.mega-sub-menu,
+.pbmit-navbar ul ul,
+.pbmit-navbar ul ul:before,
+.pbmit-navbar ul.sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(1)>ul.mega-sub-menu,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(1)>ul.mega-sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(2)>ul.mega-sub-menu,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(2)>ul.mega-sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(3)>ul.mega-sub-menu,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(3)>ul.mega-sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(4)>ul.mega-sub-menu,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(4)>ul.mega-sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(5)>ul.mega-sub-menu,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(5)>ul.mega-sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(6)>ul.mega-sub-menu,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li:nth-child(6)>ul.mega-sub-menu:before {
+    background-color: #fff;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.pbmit-title-bar-wrapper,
+.pbmit-title-bar-wrapper.pbmit-bg-color-custom:before {
+    background-color: rgba(64, 50, 38, .2);
+    background-image: url(https://xinterio-demo.pbminfotech.com/demo3/wp-content/uploads/sites/4/2024/05/titlebar-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.site-footer,
+.site-footer.pbmit-bg-color-custom:before {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    background-attachment: scroll
+}
+
+.pbmit-footer-text-area,
+.pbmit-footer-text-area.pbmit-bg-color-custom::before,
+.pbmit-footer-style-4 .pbmit-footer-text-area .pbmit-footer-text-inner,
+.pbmit-footer-style-4 .pbmit-footer-text-area.pbmit-bg-color-custom .pbmit-footer-text-inner {
+    background-color: #30251b;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.error404 .site-content-wrap,
+.error404 .pbmit-bg-color-custom>.site-content-wrap:before {
+    background-color: rgba(0, 0, 0, .37);
+    background-image: url(https://xinterio-demo.pbminfotech.com/demo3/wp-content/uploads/sites/4/2024/05/404.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: #666;
+    text-transform: none;
+    font-style: normal
+}
+
+h1 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+h2 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+h3 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+h4 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+h5 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+h6 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbmit-heading-subheading .pbmit-element-title {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbmit-heading-subheading .pbmit-element-subtitle,
+.pbmit-element-subtitle-new {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #bb9a65;
+    text-transform: uppercase;
+    font-style: normal
+}
+
+.pbmit-heading-subheading .pbmit-heading-desc {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #666;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbminfotech-sidebar .widget_search .wp-block-search__label,
+.pbminfotech-sidebar .widget_block .wp-block-group h2,
+.widget-title,
+.pbmit-footer-copyright-box h3 {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -.25px;
+    color: #403226;
+    text-transform: capitalize;
+    font-style: normal
+}
+
+.pbmit-footer-widget .widget .widget-title {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #bb9a65;
+    text-transform: capitalize;
+    font-style: normal
+}
+
+.pbmit-search-results-back-global-btn a,
+.pbmit-search-results-load-btn a,
+.pbmit-read-more-link a,
+.pbmit-service-btn a,
+.woocommerce ul.products li.product .onsale,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.elementor-element .elementor-widget-button .elementor-button,
+.pbmit-ptable-btn,
+.pbmit-ptable-btn a,
+.pbmit-service-btn,
+.pbmit-ihbox-btn a,
+.woocommerce .woocommerce-message .button,
+.woocommerce div.product form.cart .button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit],
+.pbmit-ads-button,
+.pbmit-ajax-load-more-btn a,
+.pbmit-header-button2 a,
+.pbmit-btn a .pbmit-button-text,
+.pbmit-form .wpcf7-submit,
+.pbmit-element-service-style-5 .pbmit-btn a,
+.pbmit-service-ads .pbmit-btn a,
+.woocommerce-cart .wc-block-grid__product-add-to-cart.wp-block-button .add_to_cart_button,
+.wc-block-components-button:not(.is-link),
+.wc-block-grid .wc-block-grid__products .wc-block-grid__product-onsale,
+.woocommerce span.onsale,
+.pbminfotech-ele-product-menu .pbmit-product-contents .price,
+.pbmit-header-button,
+.pbmit-static-btn a,
+.pbmit-portfolio-btn a,
+.pbmit-team-btn a {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.25px;
+    text-transform: capitalize;
+    font-style: normal
+}
+
+.pbmit-service-style-3 .pbminfotech-box-number,
+.pbmit-ihbox-style-4 .pbmit-ihbox-icon:before,
+.pbmit-ele-blog .pbmit-meta-line,
+.pbmit-element-timeline-style-2 .pbmit-ourhistory-type2 .label,
+.pbmit-ihbox-style-10 .pbmit-element-title,
+.pbmit-comment-content .pbmit-comment-author .pbmit-comment-author-inner,
+.pbmit-comment-content .pbmit-comment-author,
+.single-post .pbmit-blog-list-ele li,
+.pbmit-blog-classic .pbmit-blog-meta span.pbmit-meta,
+.pbm_addons_recent_posts_widget .pbmit-rpw-content .pbmit-rpw-date a,
+.pbmit-ihbox-style-18 .pbmit-ihbox-box-number,
+.pbmit-testimonial-style-4 .pbminfotech-testimonial-text,
+.pbmit-ihbox-style-26 .pbmit-ihbox-box-number,
+.pbmit-testimonial-style-11 .pbminfotech-box-desc blockquote,
+.pbminfotech-ele-ptable-style-3 .pbmit-ptablebox-featured-w,
+.pbmit-element-static-box-style-5 .pbmit-static-box-number,
+.pbmit-footer-style-5 .pbmit-social-links li a {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: normal;
+    font-style: normal
+}
+
+.pbmit-ihbox-style-1 .pbmit-icon-type-icon,
+.pbmit-ihbox-style-1 .pbmit-ihbox-icon-type-text,
+.pbmit-ihbox-style-1 .pbmit-element-title,
+.pbminfotech-ele-fid-style-1 .pbmit-fid-inner,
+.pbminfotech-ele-fid-style-1 .pbmit-fid-sub .pbmit-fid-title,
+.pbminfotech-ele-ptable-style-1 .pbmit-ptable-price-w,
+.pbminfotech-ele-ptable-style-1 .pbminfotech-ptable-frequency,
+.pbminfotech-ele-ptable-style-1 .pbmit-pricing-table-featured-col .pbmit-feature-wrap .pbmit-ptablebox-featured-w,
+.pbmit-element-timeline-style-1 .pbmit-timeline-wrapper .pbmit-timeline-year,
+body .elementor-element .elementor-widget .elementor-icon-list-items .elementor-icon-list-text,
+.pbmit-tabs .pbmit-tab-list ul li,
+.site .elementor-element .elementor-accordion .elementor-tab-title .elementor-accordion-title,
+.pbminfotech-ele-fid-style-3 .pbmit-fid-inner,
+.site-content .pbmit_widget_list_all_posts ul>li a,
+.widget .download .item-download a,
+.pbm_addons_recent_posts_widget .pbmit-rpw-content .pbmit-rpw-title a,
+.site-content .widget.widget_categories ul li .pbmit-brackets,
+ul.wp-block-categories li .pbmit-cat-li a,
+ul.wp-block-archives li .pbmit-arc-li a,
+.site-content .widget.widget_categories ul li a,
+.site-content .widget.widget_archive ul li .pbmit-arc-li>a,
+.pbmit-portfolio-line-value,
+.post-navigation .nav-links .nav-title,
+.pbmit-author-content .pbmit-author-name,
+.reply a,
+.elementor-element .elementor-widget-progress .elementor-title,
+.site-content .widget_product_categories ul li a,
+.wc-block-components-totals-item__value,
+.woocommerce ul.order_details li strong,
+.pbmit-subheading-color .pbmit-heading-subheading h4.pbmit-element-subtitle,
+.pbmit-text-design,
+.pbmit-ihbox-style-11 .pbmit-ihbox-icon-type-text,
+.pbmit-ihbox-style-12 .pbmit-ihbox-icon-type-text,
+.pbmit-search-results-main-wrapper.skltbs-theme-light .skltbs-tab,
+.elementor-tabs .elementor-tabs-content-wrapper .pbmit-tab-list ul li,
+.elementor-widget-tabs .elementor-tab-desktop-title,
+.pbmit-ihbox-style-17 .pbmit-ihbox-icon-type-text,
+.pbmit-static-box-style-1 .pbmit-box-number,
+.pbmit-element-static-box-style-2 .pbmit-box-number,
+.pbmit-static-box-style-3 .pbmit-box-number,
+.pbmit-fid-style-6-new .pbminfotech-ele-fid-style-6 .pbmit-fid-title,
+.pbmit-tab-special .pbmit-tab-inner-content li,
+body .pbmit-progress-bar-style-2 .elementor-progress-bar,
+.pbminfotech-ele-ptable-style-3 .pbmit-ptable-price-w,
+.pbmit-testimonial-style-12 .pbminfotech-star-ratings-text {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal
+}
+
+.pbmit-marquee-effect-style-1 .pbmit-tag-wrapper::before,
+.pbmit-tab-content-title,
+.pbmit-tab-link,
+.elementor-tabs .elementor-tabs-content-wrapper .pbmit-tab-number,
+.pbminfotech-ele-ptable-style-2 .pbminfotech-ptable-symbol,
+.pbminfotech-ele-ptable-style-2 .pbminfotech-ptable-price,
+.pbmit-progress-bar-style-1 .elementor-progress-percentage,
+.elementor-element .elementor-widget-heading .elementor-heading-title,
+.pbmit-element-static-box-style-4 .pbmit-box-number {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal
+}
+
+.comment-respond input[type=number],
+.comment-respond input[type=text],
+.comment-respond input[type=email],
+.comment-respond input[type=password],
+.comment-respond input[type=tel],
+.comment-respond input[type=url],
+.comment-respond input[type=search],
+.comment-respond textarea,
+.pbmit-comment-content p,
+.pbmit-ihbox-style-23 .pbmit-element-title,
+.pbmit-ihbox-style-24 .pbmit-element-title {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-style: normal
+}
+
+body:not(.mega-menu-pbminfotech-top) .pbmit-navbar div>ul>li>a,
+.pbmit-max-mega-menu-override #page #site-navigation .max-mega-menu>li.mega-menu-item>a.mega-menu-link,
+.pbmit-burger-menu-area .menu-main-menu-container ul>li>a {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbmit-navbar ul ul a,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li.mega-menu-flyout>ul.mega-sub-menu li.mega-menu-item a.mega-menu-link,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li>ul.mega-sub-menu li.mega-menu-item>a:hover,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li>ul.mega-sub-menu li.mega-menu-item>a:focus,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li.mega-menu-megamenu>ul.mega-sub-menu ul:not(.menu)>li.mega-menu-item>a.mega-menu-link,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li.mega-menu-megamenu>ul.mega-sub-menu li .widget_nav_menu ul.menu>li.mega-menu-item>a.mega-menu-link,
+.pbmit-burger-menu-area .menu-main-menu-container ul ul a {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item h4.mega-block-title,
+.pbmit-max-mega-menu-override #page #site-navigation .mega-menu-wrap>ul>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item h4.mega-block-title {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #403226;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbmit-tbar-title {
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -.25px;
+    color: #fff;
+    text-transform: none;
+    font-style: normal
+}
+
+.pbmit-tbar-subtitle {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-transform: capitalize;
+    font-style: normal
+}
+
+.pbmit-breadcrumb,
+.pbmit-breadcrumb a {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-transform: capitalize;
+    font-style: normal
+}
+
+@media screen and (max-width:1200px) {
+    .pbmit-pre-header-wrapper {
+        display: none
+    }
+}
+
+@media (min-width:1201px) and (max-width:1700px) {
+    .pbmit-header-style-9 .pbmit-header-overlay .pbmit-menuarea {
+        margin-left: 30px
+    }
+    .rtl .pbmit-header-style-9 .pbmit-header-overlay .pbmit-menuarea {
+        margin: 0 30px 0 0
+    }
+}
+
+@media (min-width:1201px) and (max-width:1500px) {
+    body:not(.mega-menu-pbminfotech-top) .pbmit-header-style-9 .pbmit-navbar div>ul>li>a {
+        font-size: 15px
+    }
+    body:not(.pbmit-max-mega-menu-override) .pbmit-header-style-9 .pbmit-navbar div>ul>li {
+        margin: 0 15px
+    }
+}

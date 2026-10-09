@@ -1,0 +1,105 @@
+.pbmit-portfolio-style-1 {
+    overflow: hidden
+}
+
+.pbmit-portfolio-style-1 .pbminfotech-box-content {
+    position: absolute;
+    top: inherit;
+    bottom: 32px;
+    left: 40px;
+    right: 40px;
+    z-index: 2
+}
+
+.pbmit-portfolio-style-1 .pbmit-port-cat a {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--pbmit-xinterio-global-color)
+}
+
+.pbmit-portfolio-style-1 .pbmit-port-cat a:hover {
+    color: var(--pbmit-xinterio-white-color)
+}
+
+.pbmit-portfolio-style-1 .pbmit-portfolio-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+
+.pbmit-portfolio-style-1 .pbmit-portfolio-title,
+.pbmit-portfolio-style-1 .pbmit-portfolio-title a {
+    color: var(--pbmit-xinterio-white-color)
+}
+
+.pbmit-portfolio-style-1 .pbmit-portfolio-title a:hover {
+    color: var(--pbmit-xinterio-global-color)
+}
+
+.pbmit-portfolio-style-1 .pbmit-featured-wrapper {
+    position: relative;
+    overflow: hidden
+}
+
+.pbmit-portfolio-style-1 .pbmit-featured-wrapper img {
+    width: 100%;
+    transform: scale(1.05) rotate(.5deg);
+    transform-origin: 90% 50%;
+    border-radius: 30px;
+    transition: transform 1.2s cubic-bezier(.4, .01, .14, .99)
+}
+
+.pbmit-element-viewtype-carousel.pbmit-element-portfolio-style-1 .pbmit-element-posts-wrapper {
+    border-radius: 30px
+}
+
+.pbmit-portfolio-style-1:hover .pbmit-featured-wrapper img {
+    transform: scale(1.001) rotate(0)
+}
+
+.pbmit-element-portfolio-style-1 .pbmit-element-inner .swiper-wrapper {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.pbmit-portfolio-style-1 .pbminfotech-post-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px
+}
+
+.pbmit-portfolio-style-1 .pbminfotech-post-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(var(--pbmit-xinterio-secondary-color-rgb), 1) 0%, rgba(var(--pbmit-xinterio-secondary-color-rgb), 0) 52%, rgba(var(--pbmit-xinterio-secondary-color-rgb), 0) 73%)
+}
+
+.pbmit-element-portfolio-style-1.pbmit-element-viewtype-carousel .pbmit-ele-group-wrapper .pbmit-ele:nth-child(2) {
+    margin-top: 15px
+}
+
+@media(max-width:1200px) {
+    .pbmit-portfolio-style-1 .pbminfotech-box-content {
+        bottom: 30px;
+        left: 30px;
+        right: 30px
+    }
+    .pbmit-portfolio-style-1 .pbmit-portfolio-title {
+        font-size: 18px;
+        line-height: 20px
+    }
+    .pbmit-portfolio-style-1 .pbmit-port-cat a {
+        font-size: 12px;
+        line-height: 22px
+    }
+}

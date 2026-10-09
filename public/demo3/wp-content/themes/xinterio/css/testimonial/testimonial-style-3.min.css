@@ -1,0 +1,141 @@
+.pbmit-testimonial-style-3 .pbminfotech-post-item,
+.pbmit-element-testimonial-style-3 .pbmit-ele-header-area {
+    position: relative
+}
+
+.pbmit-element-testimonial-style-3 .pbmit-ele-header-area::before {
+    font-family: "pbminfotech-base-icons";
+    content: '\e886';
+    position: absolute;
+    right: -265px;
+    top: -23px;
+    font-size: 290px;
+    line-height: 290px;
+    display: inline-block;
+    color: rgba(var(--pbmit-xinterio-blackish-color-rgb), .2);
+    background: -webkit-linear-gradient(rgba(196, 196, 196, 1) 0%, rgba(254, 254, 254, .3) 99%, rgba(255, 255, 255, .3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .2;
+    z-index: -1
+}
+
+.rtl .pbmit-element-testimonial-style-3 .pbmit-ele-header-area::before {
+    left: -265px;
+    right: inherit;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+.pbmit-testimonial-style-3 .pbminfotech-box-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: var(--pbmit-xinterio-global-color)
+}
+
+.pbmit-testimonial-style-3 .pbmit-featured-wrapper {
+    width: 80px;
+    margin-right: 20px
+}
+
+.rtl .pbmit-testimonial-style-3 .pbmit-featured-wrapper {
+    margin: 0 0 0 20px
+}
+
+.pbmit-testimonial-style-3 .pbmit-featured-wrapper img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+}
+
+.pbmit-testimonial-style-3 .pbminfotech-testimonial-text {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+    padding: 10px 0 30px;
+    border: 0
+}
+
+.pbmit-testimonial-style-3 .pbminfotech-testimonial-detail,
+.pbmit-testimonial-style-3 .pbminfotech-box-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.pbmit-testimonial-style-3 .pbminfotech-box-star-ratings {
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(var(--pbmit-xinterio-global-color-rgb), .5)
+}
+
+.pbmit-testimonial-style-3 .pbminfotech-box-star-ratings .pbmit-active {
+    color: #ffa72a
+}
+
+.pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-prev,
+.pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-next {
+    background-color: var(--pbmit-xinterio-white-color);
+    color: var(--pbmit-xinterio-blackish-color);
+    bottom: -21%;
+    top: auto
+}
+
+.pbmit-elementor-bg-color-light .pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-prev {
+    background-color: var(--pbmit-xinterio-white-color)
+}
+
+.pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-next {
+    left: 70px;
+    background-color: var(--pbmit-xinterio-global-color);
+    color: var(--pbmit-xinterio-white-color);
+    border-color: transparent
+}
+
+.rtl .pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-next {
+    left: inherit;
+    right: 70px
+}
+
+.pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-prev:hover,
+.pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-button-next:hover {
+    background-color: var(--pbmit-xinterio-global-color);
+    color: var(--pbmit-xinterio-white-color);
+    border-color: transparent
+}
+
+.pbmit-elementor-bg-color-white .pbmit-testimonial-style-3 .pbminfotech-post-item .pbmit-box-content-wrap::before {
+    background-color: var(--pbmit-xinterio-light-bg-color)
+}
+
+.pbminfotech-element.pbmit-element-testimonial-style-3 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    justify-content: start
+}
+
+@media(max-width:1366px) {
+    .pbmit-element-testimonial-style-3 .pbmit-ele-header-area::before {
+        right: 0;
+        top: -30px;
+        font-size: 110px;
+        line-height: 110px
+    }
+    .rtl .pbmit-element-testimonial-style-3 .pbmit-ele-header-area::before {
+        left: 0
+    }
+}
+
+@media(max-width:767px) {
+    .pbmit-testimonial-style-3 .pbminfotech-post-item .pbmit-box-content-wrap {
+        border-radius: 30px
+    }
+    .pbmit-element-testimonial-style-3.pbmit-element-viewtype-carousel.pbmit-element-caroursel-dot-true {
+        padding: 0
+    }
+}

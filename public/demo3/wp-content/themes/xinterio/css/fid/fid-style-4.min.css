@@ -1,0 +1,108 @@
+.pbminfotech-ele-fid-style-4 .pbmit-fid-inner {
+    font-size: 80px;
+    line-height: 80px;
+    color: var(--pbmit-xinterio-global-color)
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-title {
+    color: var(--pbmit-xinterio-global-color);
+    margin: 0 0 5px 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid-title {
+    margin: 0 10px 5px 0
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-inner sub,
+.pbminfotech-ele-fid-style-4 .pbmit-fid-inner sup {
+    font-size: 50px;
+    line-height: 50px
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-before sup,
+.pbminfotech-ele-fid-style-4 .pbmit-fid sup {
+    top: -30px
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid sup {
+    margin-left: -20px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid sup {
+    margin: 0 -20px 0 0
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-before sup {
+    margin-right: -20px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid-before sup {
+    margin: 0 0 0 -20px
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-before sub,
+.pbminfotech-ele-fid-style-4 .pbmit-fid sub {
+    bottom: -2px
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid sub {
+    margin-left: -14px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid sub {
+    margin: 0 -14px 0 0
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-before sub {
+    margin-right: -14px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid-before sub {
+    margin: 0 0 0 -14px
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-inner .pbmit-fid span {
+    margin-left: -22px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid-inner .pbmit-fid span {
+    margin: 0 -22px 0 0
+}
+
+.pbminfotech-ele-fid-style-4 .pbmit-fid-inner .pbmit-fid-before span {
+    margin-right: -22px
+}
+
+.rtl .pbminfotech-ele-fid-style-4 .pbmit-fid-inner .pbmit-fid-before span {
+    margin: 0 0 0 -22px
+}
+
+.pbmit-elementor-bg-color-globalcolor .pbminfotech-ele-fid-style-4 .pbmit-fid-inner,
+.pbmit-elementor-bg-color-gradient .pbminfotech-ele-fid-style-4 .pbmit-fid-inner,
+.pbmit-elementor-bg-color-globalcolor .pbminfotech-ele-fid-style-4 .pbmit-fid-title,
+.pbmit-elementor-bg-color-gradient .pbminfotech-ele-fid-style-4 .pbmit-fid-title,
+.pbmit-elementor-bg-color-secondary .pbminfotech-ele-fid-style-4 .pbmit-fid-inner,
+.pbmit-elementor-bg-color-blackish .pbminfotech-ele-fid-style-4 .pbmit-fid-inner {
+    color: var(--pbmit-xinterio-white-color)
+}
+
+.pbmit-fid-right .pbminfotech-ele-fid-style-4 {
+    display: inline-block;
+    text-align: right
+}
+
+.rtl .pbmit-fid-right .pbminfotech-ele-fid-style-4 {
+    text-align: left
+}
+
+.pbmit-fid-right .pbminfotech-ele-fid-style-4 .pbmit-fid-inner {
+    margin-bottom: 0
+}
+
+.pbmit-fid-right .pbminfotech-ele-fid-style-4 .pbmit-fid-title {
+    color: #666
+}

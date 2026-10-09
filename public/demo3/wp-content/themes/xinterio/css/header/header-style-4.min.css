@@ -1,0 +1,83 @@
+.pbmit-header-style-4 {
+    position: relative
+}
+
+.pbmit-header-style-4 .pbmit-slider-area {
+    background-color: var(--pbmit-xinterio-blackish-color)
+}
+
+@media (min-width:1201px) {
+    .pbmit-header-style-4 .pbmit-title-bar-wrapper,
+    .pbmit-header-style-4 .pbmit-slider-area {
+        margin: 0 15px;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 20px
+    }
+    .pbmit-header-style-4 .pbmit-pre-header-wrapper {
+        border-bottom: 1px solid rgba(var(--pbmit-xinterio-blackish-color-rgb), .2)
+    }
+    .pbmit-header-style-4 .pbmit-pre-header-wrapper .pbmit-pre-header-right {
+        padding-left: 35px;
+        border-left: 1px solid rgba(var(--pbmit-xinterio-blackish-color-rgb), .2)
+    }
+    .rtl .pbmit-header-style-4 .pbmit-pre-header-wrapper .pbmit-pre-header-right {
+        padding: 0 35px 0 0;
+        border-left-width: 0;
+        border-right: 1px solid rgba(var(--pbmit-xinterio-blackish-color-rgb), .2)
+    }
+    .pbmit-header-style-4 .pbmit-contact-info li {
+        display: inline-flex;
+        font-size: 15px
+    }
+    .pbmit-header-style-4 .pbmit-contact-info li:not(:last-child) {
+        padding: 0 50px 0 0
+    }
+    .rtl .pbmit-header-style-4 .pbmit-contact-info li:not(:last-child) {
+        padding: 0 0 0 50px
+    }
+    .pbmit-header-style-4 .pbmit-menuarea {
+        margin: 0 0 0 15%
+    }
+    .rtl .pbmit-header-style-4 .pbmit-menuarea {
+        margin: 0 15% 0 0
+    }
+    .pbmit-header-style-4 .pbmit-right-box .pbmit-button-box-second {
+        padding: 0 35px 0 30px
+    }
+    .rtl .pbmit-header-style-4 .pbmit-right-box .pbmit-button-box-second {
+        padding: 0 30px 0 35px
+    }
+    .pbmit-header-style-4 .pbmit-slider-area .sr7-leftarrow.sr7-arrows.custom {
+        left: 15px !important
+    }
+    .pbmit-header-style-4 .pbmit-slider-area .sr7-rightarrow.sr7-arrows.custom {
+        right: 15px !important
+    }
+    .pbmit-header-style-4 .custom.sr7-bullets.sr7-ndv.sr7-nphr.sr7-npvc {
+        right: -5px !important
+    }
+}
+
+@media(max-width:1366px) {
+    .pbmit-header-style-4 .pbmit-menuarea {
+        margin: 0 !important
+    }
+    .pbmit-header-style-4 .pbmit-contact-info li:not(:last-child) {
+        padding: 0 30px 0 0
+    }
+    .rtl .pbmit-header-style-4 .pbmit-contact-info li:not(:last-child) {
+        padding: 0 0 0 30px
+    }
+    .pbmit-header-style-4 .pbmit-sticky-header .container,
+    .pbmit-header-style-4 .pbmit-pre-header-wrapper .container,
+    .pbmit-header-style-4 .pbmit-header-wrapper .container {
+        padding: 0 30px
+    }
+}
+
+@media (max-width:1200px) {
+    .site-header.pbmit-header-style-4 .pbmit-right-box .pbmit-button-box-second {
+        display: none
+    }
+}

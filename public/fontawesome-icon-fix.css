@@ -1,0 +1,281 @@
+/* Load Font Awesome 6 automatically, so every page only needs ONE <link> to this file.
+   (@import must stay at the very top of the file) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+/* ==========================================================
+   Xinterio: replace broken icon fonts with Font Awesome 6
+   Requires FA 6 (already in your <head>):
+   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+   Load this file LAST, after every other stylesheet.
+   ========================================================== */
+
+/* ---------- 1. pbmit-base-icon-* (service arrows etc.) ---------- */
+[class*="pbmit-base-icon-"],
+[class*="pbmit-base-icon-"]::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+}
+.pbmit-base-icon-pbmit-up-arrow::before { content: "\f062" !important; transform: rotate(45deg); }
+.pbmit-base-icon-up-right-arrow::before,
+.pbmit-base-icon-up-right-arrow-1::before { content: "\f062" !important; transform: rotate(45deg); }
+.pbmit-base-icon-angle-right::before     { content: "\f105" !important; }
+.pbmit-base-icon-angle-left::before      { content: "\f104" !important; }
+.pbmit-base-icon-down-open-big::before   { content: "\f078" !important; }
+.pbmit-base-icon-up-open-big::before     { content: "\f077" !important; }
+
+/* ---------- 2. Carousel prev/next buttons (theme uses ::after) ---------- */
+.pbminfotech-element .swiper-button-next::after,
+.pbminfotech-element .swiper-button-prev::after {
+  content: "\f054" !important;                 /* chevron-right */
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-size: 16px !important;
+}
+.pbminfotech-element .swiper-button-prev::after { transform: scaleX(-1); } /* flip to point left */
+
+/* ---------- 3. Scroll-to-top button (uses ::before AND ::after) ---------- */
+.pbmit-progress-wrap::before,
+.pbmit-progress-wrap::after {
+  content: "\f077" !important;                 /* chevron-up */
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-size: 18px !important;
+}
+
+/* ---------- 4. "Why choose us" icons (flaticon_xinterio) ----------
+   Theme rule is  i[class*=" pbmit-xinterio-icon-"]:before { font-family: ... !important }
+   so we need HIGHER specificity to win. */
+i.pbmit-xinterio-icon[class*="pbmit-xinterio-icon-"]::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  line-height: 1;
+}
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-living-room::before { content: "\f4b8" !important; } /* couch */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-house::before       { content: "\f015" !important; } /* house */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-brickwall-1::before { content: "\f009" !important; } /* table-cells-large */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-hard-hat::before    { content: "\f807" !important; } /* helmet-safety */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-3d::before          { content: "\f1b2" !important; } /* cube */
+/* other icons from the same font, in case other sections use them */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-star::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-star-1::before      { content: "\f005" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-quote-left::before  { content: "\f10d" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-right-quotation-mark::before { content: "\f10e" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-phone::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-telephone::before   { content: "\f095" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-placeholder::before { content: "\f3c5" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-message::before     { content: "\f0e0" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-right::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-next::before        { content: "\f054" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-left::before        { content: "\f053" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-up-right-arrow::before { content: "\f062" !important; transform: rotate(45deg); }
+
+/* ---------- 5. Video play icon (stroke-gap-icons) ---------- */
+i.sgicon[class*="sgicon-"],
+i.sgicon[class*="sgicon-"]::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+.sgicon-Play::before { content: "\f04b" !important; }
+
+/* ---------- 6. Misc pseudo-element icons used by the theme ---------- */
+.pbmit-search-cart-box .pbmit-cart-wrapper a::before {   /* header cart */
+  content: "\f290" !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+.pbmit-tabs .pbmit-tab-list ul li::before {              /* tick list */
+  content: "\f00c" !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+.reply a::after {                                         /* comment reply arrow */
+  content: "\f062" !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  transform: rotate(45deg);
+}
+
+/* ---------- 7. Blog read-more arrow ---------- */
+.pbmit-blog-btn .fa-arrow-up-right::before {
+  content: "\f062" !important;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+
+/* ==========================================================
+   8. Icons used in the header / footer / blog / about pages
+   (these pages use the theme's original class names)
+   ========================================================== */
+
+/* ---- solid icons ---- */
+.pbmit-base-icon-mail-alt::before,
+.pbmit-base-icon-email::before,
+.pbmit-base-icon-letter::before            { content: "\f0e0" !important; }   /* envelope */
+.pbmit-base-icon-location-dot-solid::before,
+.pbmit-base-icon-location::before,
+.pbmit-base-icon-location-1::before,
+.pbmit-base-icon-location-2::before,
+.pbmit-base-icon-placeholder::before,
+.pbmit-base-icon-placeholder-1::before,
+.pbmit-base-icon-marker::before            { content: "\f3c5" !important; }   /* location-dot */
+.pbmit-base-icon-phone-volume-solid-1::before,
+.pbmit-base-icon-phone-volume-solid::before { content: "\f2a0" !important; }  /* phone-volume */
+.pbmit-base-icon-phone::before,
+.pbmit-base-icon-phone-call::before,
+.pbmit-base-icon-phone-call-1::before      { content: "\f095" !important; }   /* phone */
+.pbmit-base-icon-search-1::before,
+.pbmit-base-icon-search::before            { content: "\f002" !important; }   /* magnifying-glass */
+.pbmit-base-icon-menu-1::before,
+.pbmit-base-icon-menu::before              { content: "\f0c9" !important; }   /* bars */
+.pbmit-base-icon-calendar::before,
+.pbmit-base-icon-calendar-1::before,
+.pbmit-base-icon-calendar-2::before,
+.pbmit-base-icon-calendar-3::before,
+.pbmit-base-icon-calendar-alt-solid::before { content: "\f073" !important; }  /* calendar-days */
+.pbmit-base-icon-user::before,
+.pbmit-base-icon-user-1::before,
+.pbmit-base-icon-user-2::before,
+.pbmit-base-icon-user-3::before,
+.pbmit-base-icon-user-4::before            { content: "\f007" !important; }   /* user */
+.pbmit-base-icon-clock::before,
+.pbmit-base-icon-clock-1::before,
+.pbmit-base-icon-clock-2::before,
+.pbmit-base-icon-clock-3::before,
+.pbmit-base-icon-time::before              { content: "\f017" !important; }   /* clock */
+.pbmit-base-icon-check::before,
+.pbmit-base-icon-check-mark::before,
+.pbmit-base-icon-check-mark-2::before,
+.pbmit-base-icon-check-solid::before,
+.pbmit-base-icon-checked::before,
+.pbmit-base-icon-tick::before,
+.pbmit-base-icon-tick-1::before            { content: "\f00c" !important; }   /* check */
+.pbmit-base-icon-quote-1::before,
+.pbmit-base-icon-quote-2::before,
+.pbmit-base-icon-quote-left::before,
+.pbmit-base-icon-left-quote::before        { content: "\f10d" !important; }   /* quote-left */
+.pbmit-base-icon-right-quotation-mark::before { content: "\f10e" !important; } /* quote-right */
+.pbmit-base-icon-arrow-right::before,
+.pbmit-base-icon-arrow-right-1::before,
+.pbmit-base-icon-right-arrow::before,
+.pbmit-base-icon-right-arrow-2::before     { content: "\f061" !important; }   /* arrow-right */
+.pbmit-base-icon-arrow-left::before,
+.pbmit-base-icon-left-arrow::before,
+.pbmit-base-icon-left-arrow-1::before,
+.pbmit-base-icon-left-arrow-2::before      { content: "\f060" !important; }   /* arrow-left */
+.pbmit-base-icon-right-open::before,
+.pbmit-base-icon-right-dir::before,
+.pbmit-base-icon-right::before,
+.pbmit-base-icon-right-1::before,
+.pbmit-base-icon-right-small::before,
+.pbmit-base-icon-next::before              { content: "\f054" !important; }   /* chevron-right */
+.pbmit-base-icon-left-open::before,
+.pbmit-base-icon-left-dir::before,
+.pbmit-base-icon-left::before,
+.pbmit-base-icon-left-small::before        { content: "\f053" !important; }   /* chevron-left */
+.pbmit-base-icon-play-button::before,
+.pbmit-base-icon-play-button-1::before,
+.pbmit-base-icon-play-button-2::before     { content: "\f04b" !important; }   /* play */
+.pbmit-base-icon-cancel::before,
+.pbmit-base-icon-cross::before,
+.pbmit-base-icon-close-circular-button-symbol::before { content: "\f00d" !important; } /* xmark */
+.pbmit-base-icon-plus::before,
+.pbmit-base-icon-plus-button::before,
+.pbmit-base-icon-plus-symbol-button::before { content: "\f067" !important; }  /* plus */
+.pbmit-base-icon-star::before,
+.pbmit-base-icon-star-1::before,
+.pbmit-base-icon-pointed-star::before,
+.pbmit-base-icon-xinterio-star::before     { content: "\f005" !important; }   /* star */
+.pbmit-base-icon-share::before,
+.pbmit-base-icon-share-1::before,
+.pbmit-base-icon-share-2::before           { content: "\f1e0" !important; }   /* share-nodes */
+.pbmit-base-icon-download::before,
+.pbmit-base-icon-download-solid::before    { content: "\f019" !important; }   /* download */
+.pbmit-base-icon-shopping-cart::before,
+.pbmit-base-icon-shopping-bag::before,
+.pbmit-base-icon-cart-bag::before          { content: "\f07a" !important; }   /* cart-shopping */
+.pbmit-base-icon-chat::before,
+.pbmit-base-icon-chat-2::before,
+.pbmit-base-icon-chat-3::before,
+.pbmit-base-icon-chat-4::before,
+.pbmit-base-icon-chat-bubble::before,
+.pbmit-base-icon-chat-bubble-1::before,
+.pbmit-base-icon-comment-1::before,
+.pbmit-base-icon-comment-2::before,
+.pbmit-base-icon-comment-alt::before,
+.pbmit-base-icon-comment-empty::before,
+.pbmit-base-icon-chat-empty::before,
+.pbmit-base-icon-speech-bubble::before     { content: "\f075" !important; }   /* comment */
+.pbmit-base-icon-folder-open::before,
+.pbmit-base-icon-folder-open-empty::before { content: "\f07c" !important; }   /* folder-open */
+.pbmit-base-icon-tags::before              { content: "\f02c" !important; }   /* tags */
+.pbmit-base-icon-link::before,
+.pbmit-base-icon-link-1::before            { content: "\f0c1" !important; }   /* link */
+.pbmit-base-icon-heart::before,
+.pbmit-base-icon-heart-empty::before       { content: "\f004" !important; }   /* heart */
+
+/* ---- brand (social) icons: need the "Brands" font, weight 400 ---- */
+.pbmit-base-icon-facebook-f::before,
+.pbmit-base-icon-facebook-squared::before,
+.pbmit-base-icon-linkedin-in::before,
+.pbmit-base-icon-linkedin-squared::before,
+.pbmit-base-icon-instagram::before,
+.pbmit-base-icon-twitter::before,
+.pbmit-base-icon-twitter-2::before,
+.pbmit-base-icon-whatsapp::before,
+.pbmit-base-icon-youtube-play::before,
+.pbmit-base-icon-pinterest::before,
+.pbmit-base-icon-tiktok::before {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+.pbmit-base-icon-facebook-f::before,
+.pbmit-base-icon-facebook-squared::before  { content: "\f39e" !important; }   /* facebook-f */
+.pbmit-base-icon-linkedin-in::before,
+.pbmit-base-icon-linkedin-squared::before  { content: "\f0e1" !important; }   /* linkedin-in */
+.pbmit-base-icon-instagram::before         { content: "\f16d" !important; }   /* instagram */
+.pbmit-base-icon-twitter-2::before         { content: "\e61b" !important; }   /* x-twitter */
+.pbmit-base-icon-twitter::before           { content: "\f099" !important; }   /* twitter */
+.pbmit-base-icon-whatsapp::before          { content: "\f232" !important; }   /* whatsapp */
+.pbmit-base-icon-youtube-play::before      { content: "\f167" !important; }   /* youtube */
+.pbmit-base-icon-pinterest::before         { content: "\f231" !important; }   /* pinterest */
+.pbmit-base-icon-tiktok::before            { content: "\e07b" !important; }   /* tiktok */
+
+/* ---- more "xinterio" icons (About page counters + process steps) ---- */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-offer::before        { content: "\f118" !important; } /* face-smile */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-satisfaction::before { content: "\f118" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-client::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-people::before       { content: "\f0c0" !important; } /* users */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-engineer::before     { content: "\f4fe" !important; } /* user-gear */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-compass::before      { content: "\f568" !important; } /* compass-drafting */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-tools::before        { content: "\f7d9" !important; } /* screwdriver-wrench */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-axis::before         { content: "\f047" !important; } /* arrows-up-down-left-right */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-warranty::before     { content: "\f3ed" !important; } /* shield-halved */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-premium::before      { content: "\f521" !important; } /* crown */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-award::before        { content: "\f559" !important; } /* award */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-trophy::before       { content: "\f091" !important; } /* trophy */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-wallet::before       { content: "\f555" !important; } /* wallet */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-calendar::before     { content: "\f073" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-clock::before        { content: "\f017" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-user::before         { content: "\f007" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-bed::before          { content: "\f236" !important; } /* bed */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-bathtub::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-bathroom::before     { content: "\f2cd" !important; } /* bath */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-kitchen::before      { content: "\f2e7" !important; } /* utensils */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-armchair::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-cushions::before     { content: "\f4b8" !important; } /* couch */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-paint::before        { content: "\f1fc" !important; } /* paintbrush */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-plastering::before   { content: "\f5aa" !important; } /* paint-roller */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-pantone::before      { content: "\f53f" !important; } /* palette */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-world::before        { content: "\f0ac" !important; } /* globe */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-portfolio::before    { content: "\f0b1" !important; } /* briefcase */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-house-design::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-eco-home::before     { content: "\f015" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-tape-measure::before { content: "\f545" !important; } /* ruler */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-magnifying-glass::before { content: "\f002" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-message::before      { content: "\f0e0" !important; }
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-conversation::before { content: "\f086" !important; } /* comments */
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-check-mark::before,
+i.pbmit-xinterio-icon.pbmit-xinterio-icon-tick-mark::before    { content: "\f00c" !important; }

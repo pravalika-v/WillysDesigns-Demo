@@ -1,0 +1,934 @@
+.wd-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+  max-width: 460px;
+}
+
+.wd-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 18px 12px;
+  border: 1px solid rgba(187, 154, 101, .45);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .05);
+  transition: transform .3s ease, border-color .3s ease, background .3s ease;
+}
+
+.wd-stat:hover {
+  transform: translateY(-4px);
+  border-color: #bb9a65;
+  background: rgba(255, 255, 255, .09);
+}
+
+.wd-ring {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  flex: 0 0 84px;
+}
+
+.wd-ring svg {
+  display: block;
+  width: 84px;
+  height: 84px;
+  transform: rotate(-90deg);
+}
+
+.wd-ring circle {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.wd-ring-bg {
+  stroke: #6a5a45;
+}
+
+.wd-ring-fg {
+  stroke: #bb9a65;
+  stroke-dasharray: 326.7;
+  stroke-dashoffset: 326.7;
+  transition: stroke-dashoffset 1.6s ease-out;
+}
+
+.wd-ring-num {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 17px;
+}
+
+.wd-ring-num b {
+  font-weight: 500;
+}
+
+.wd-stat-label,
+.wd-cta {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.wd-stat-label {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.wd-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  background: #bb9a65;
+  color: #fff;
+  text-decoration: none;
+  transition: gap .3s ease, background .3s ease;
+}
+
+.wd-cta:hover {
+  gap: 16px;
+  background: #a8884f;
+  color: #fff;
+}
+
+/* Roboto */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(assets/fonts/roboto/roboto-1.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/roboto/roboto-2.woff2) format('woff2');
+}
+
+/* Space Grotesk */
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/space-grotesk/space-grotesk.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/space-grotesk/SpaceGrotesk.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/fonts/space-grotesk/SpaceGrotesk.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/space-grotesk/SpaceGrotesk.woff2) format('woff2');
+}
+
+/* pbminfotech-base-icons (icon font used across the theme's UI icons) */
+
+@font-face {
+  font-family: 'pbminfotech-base-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(assets/fonts/pbminfotech-icons/pbminfotech-base-icons.ttf) format('truetype'),
+    url(assets/fonts/pbminfotech-icons/pbminfotech-base-icons.woff) format('woff'),
+    url(assets/fonts/pbminfotech-icons/pbminfotech-base-icons.woff2) format('woff2');
+}
+
+.service-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 320px;
+  max-height: 650px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* keeps the image horizontal and fills the banner */
+  object-position: center;
+}
+
+.service-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  /* darkens the image so text is readable */
+}
+
+.service-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.service-hero__tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #bb9a65;
+}
+
+.service-hero__title {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.service-hero__text {
+  margin: 0 0 24px;
+  font-size: clamp(15px, 2vw, 18px);
+  color: #f1f1f1;
+}
+
+.service-hero__btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #bb9a65;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.service-hero__btn:hover {
+  background: #a4834f;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    height: 45vh;
+  }
+}
+
+/* For footer enhancements */
+.pbmit-footer-big-area-wrapper {
+  overflow: visible !important;
+  padding: 20px 0 30px !important;
+}
+
+.pbmit-footer-big-area-wrapper .pbmit-footer-big-title {
+  text-align: center;
+}
+
+.pbmit-footer-big-area-wrapper .pbmit-footer-title-big {
+  display: inline-block !important;
+  /* so its width matches the text */
+  width: auto !important;
+  max-width: none !important;
+  /* was 100% */
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  /* keeps y, g, j from being clipped */
+  font-weight: 800 !important;
+  letter-spacing: .02em;
+  color: #bb9a65 !important;
+  -webkit-text-fill-color: #bb9a65 !important;
+  background: none !important;
+  opacity: .9;
+  /* font-size is set by the script in footer.js */
+}
+
+/* CTA */
+.footer-cta {
+  padding: 60px 0 10px;
+}
+
+.footer-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.footer-cta h3 {
+  color: #fff;
+  font-size: clamp(22px, 3vw, 34px);
+  margin: 0 0 6px;
+}
+
+.footer-cta p {
+  color: rgba(255, 255, 255, .7);
+  margin: 0;
+}
+
+.footer-cta__btn {
+  background: #bb9a65;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: .3s;
+}
+
+.footer-cta__btn:hover {
+  background: #fff;
+  color: #3f3127;
+  transform: translateY(-3px);
+}
+
+.footer-cta__btn i {
+  margin-left: 8px;
+  transition: .3s;
+}
+
+.footer-cta__btn:hover i {
+  transform: translateX(4px);
+}
+
+.pbmit-footer-widget-area {
+  padding-top: 40px !important;
+  padding-bottom: 50px !important;
+}
+
+/* Headings and links */
+.pbmit-footer-widget h5 {
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 22px;
+}
+
+.pbmit-footer-widget h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 2px;
+  background: #bb9a65;
+}
+
+.pbmit-footer-widget .menu li a {
+  display: inline-block;
+  transition: .25s;
+}
+
+.pbmit-footer-widget .menu li a:hover {
+  color: #bb9a65;
+  transform: translateX(6px);
+}
+
+.pbmit-footer-widget p i {
+  color: #bb9a65;
+  margin-right: 10px;
+  width: 16px;
+}
+
+/* Social */
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  color: #fff;
+  transition: .3s;
+}
+
+.footer-social a:hover {
+  background: #bb9a65;
+  border-color: #bb9a65;
+  transform: translateY(-3px);
+}
+
+/* Credit line */
+.footer-credit {
+  display: inline-block;
+  margin-left: 14px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(0, 0, 0, .2);
+}
+
+.footer-credit a {
+  color: #bb9a65;
+  font-weight: 600;
+}
+
+@media (max-width:767px) {
+  .footer-credit {
+    display: block;
+    margin: 6px 0 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+/* Big wordmark: solid, no clipping */
+.pbmit-footer-big-area-wrapper {
+  overflow: visible !important;
+  padding: 20px 0 30px !important;
+}
+
+.pbmit-footer-big-area-wrapper .pbmit-footer-title-big {
+  font-size: clamp(70px, 17vw, 260px) !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  margin: 0 !important;
+  text-align: center;
+  letter-spacing: .04em;
+  color: #bb9a65 !important;
+  background: none !important;
+  -webkit-text-fill-color: #bb9a65 !important;
+  opacity: .9;
+}
+
+/* Global floating WhatsApp button */
+.wa-float {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  z-index: 99;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+  transition: transform .25s;
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .wa-float {
+    left: 16px;
+    bottom: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+}
+
+/* FAQ accordion */
+.elementor-accordion .elementor-tab-title {
+  cursor: pointer;
+}
+
+.elementor-accordion .elementor-tab-title:focus-visible {
+  outline: 2px solid #bb9a65;
+  outline-offset: 2px;
+}
+
+/* show only the + when closed, only the - when open */
+.elementor-accordion .elementor-accordion-icon-opened {
+  display: none;
+}
+
+.elementor-accordion .elementor-active .elementor-accordion-icon-opened {
+  display: inline-block;
+}
+
+.elementor-accordion .elementor-active .elementor-accordion-icon-closed {
+  display: none;
+}
+
+.elementor-accordion .elementor-tab-content {
+  color: #5f564e;
+  font-size: 16px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.elementor-accordion .elementor-tab-content.faq-open {
+  animation: faqFade .3s ease;
+}
+
+@keyframes faqFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .elementor-accordion .elementor-tab-content.faq-open {
+    animation: none;
+  }
+}
+
+/* Remove the leftover space inside the footer's main block */
+#colophon .pbmit-footer-widget-area::before,
+#colophon .footer-wrap::before {
+  display: none !important;
+  content: none !important;
+}
+
+#colophon .pbmit-footer-widget-area>.container,
+#colophon .pbmit-footer-widget-area .row {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+#colophon .pbmit-footer-widget-area .pbmit-footer-widget,
+#colophon .pbmit-footer-widget-area .widget {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* "Why Choose Us": equal-height cards */
+.pbmit-element-miconheading-style-17 .pbmit-element-posts-wrapper>article,
+.pbmit-element-miconheading-style-17 .swiper-slide {
+  display: flex !important;
+  height: auto !important;
+}
+
+.pbmit-element-miconheading-style-17 .swiper-slide>article {
+  width: 100%;
+  height: 100%;
+}
+
+.pbmit-element-miconheading-style-17 .pbmit-ihbox-style-17 {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* title, then text, then icon pinned to the bottom of every card */
+.pbmit-element-miconheading-style-17 .pbmit-ihbox-style-17 .pbmit-ihbox-box {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto;
+}
+
+.pbmit-element-miconheading-style-17 .pbmit-ihbox-style-17 .pbmit-element-title {
+  order: 1;
+}
+
+.pbmit-element-miconheading-style-17 .pbmit-ihbox-style-17 .pbmit-heading-desc {
+  order: 2;
+}
+
+.pbmit-element-miconheading-style-17 .pbmit-ihbox-style-17 .pbmit-ihbox-icon {
+  order: 3;
+  margin-top: auto !important;
+  padding-top: 28px;
+}
+
+/* Left panel: breathing room above and below the content */
+.elementor-element-31e2cea>.elementor-widget-wrap {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+/* Left panel: breathing room above and below */
+.elementor-element-31e2cea>.elementor-widget-wrap {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+@media (min-width: 768px) {
+  .elementor-element-6f29284>.elementor-container {
+    align-items: stretch;
+  }
+
+  /* Right column: no padding, content centred vertically */
+  .elementor-element-6f29284 .elementor-element-7f78ecc {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .elementor-element-6f29284 .elementor-element-7f78ecc>.elementor-widget-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    align-content: center;
+  }
+
+  .elementor-element-6f29284 .elementor-element-7f78ecc .elementor-widget,
+  .elementor-element-6f29284 .elementor-element-7f78ecc .elementor-widget-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  /* Image keeps its own natural height */
+  .elementor-element-6f29284 .pbmit-ele-before-after img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* Mobile: image stacks below, give it a sensible height */
+@media (max-width: 767px) {
+  .elementor-element-6f29284 .pbmit-ele-before-after img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* footer button hover issue */
+#colophon .footer-cta .footer-cta__btn,
+#colophon .footer-cta .footer-cta__btn:visited {
+  background: #c19f6a;
+  /* your normal gold */
+  color: #fff;
+  transition: background .3s ease, color .3s ease, transform .3s ease;
+}
+
+#colophon .footer-cta .footer-cta__btn:hover,
+#colophon .footer-cta .footer-cta__btn:focus {
+  background: #a8854f;
+  /* darker gold on hover */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#colophon .footer-cta .footer-cta__btn:hover i {
+  transform: translateX(4px);
+  /* arrow nudges right */
+}
+
+#colophon .footer-cta .footer-cta__btn i {
+  transition: transform .3s ease;
+}
+
+/* footer button hover issue */
+
+/* header active css */
+#pbmit-top-menu>li>a {
+  position: relative;
+  transition: color .3s ease;
+}
+
+/* active + hover colour */
+#pbmit-top-menu>li.active>a,
+#pbmit-top-menu>li.current-menu-item>a,
+#pbmit-top-menu>li>a:hover {
+  color: #b8955d;
+}
+
+/* gold underline on the active page */
+#pbmit-top-menu>li>a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 26px;
+  width: 100%;
+  height: 2px;
+  background: #b8955d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease;
+}
+
+#pbmit-top-menu>li.active>a::after,
+#pbmit-top-menu>li.current-menu-item>a::after,
+#pbmit-top-menu>li>a:hover::after {
+  transform: scaleX(1);
+}
+/* header active css */
+/* Mobile Header Adjustments */
+@media (max-width: 991px) {
+  .pbmit-header-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  /* Compact Logo */
+  .pbmit-logo {
+    flex: 0 0 auto !important;
+    max-width: 85px !important;
+  }
+
+  .pbmit-logo img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* Hide only the phone number link */
+  .pbmit-right-box > .pbmit-header-button {
+    display: none !important;
+  }
+
+  /* Right-side grouping */
+  .pbmit-right-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-left: auto !important;
+  }
+
+  /* Keep original button styling, cleanly scaled to fit mobile screens */
+  .pbmit-button-box-second {
+    display: block !important;
+    transform: scale(0.8);
+    transform-origin: right center;
+  }
+
+  /* Ensure hamburger menu sits right next to it */
+  .pbmit-burger-menu-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nav-menu-toggle {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 4px !important;
+    cursor: pointer !important;
+  }
+}
+@media (max-width: 1199px) {
+  #pbmit-top-menu>li>a::after {
+    display: none;
+  }
+}
+
+/* header active css */
+
+/* footer tagline for willys */
+/* Footer tagline under the big wordmark */
+.footer-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(12px, 2.5vw, 32px);
+  width: 100%;
+  margin-top: 4px;
+}
+
+.footer-tagline__text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: var(--tag-size, 18px);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  padding-left: .6em;
+  /* balances the trailing letter-spacing so it's truly centred */
+  color: #bb9a65;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .8s ease .3s, transform .8s ease .3s;
+}
+
+.footer-tagline__line {
+  flex: 1;
+  height: 1px;
+  transform: scaleX(0);
+  transition: transform 1s ease;
+}
+
+.footer-tagline__line:first-child {
+  background: linear-gradient(90deg, transparent, #bb9a65);
+  transform-origin: right;
+}
+
+.footer-tagline__line:last-child {
+  background: linear-gradient(90deg, #bb9a65, transparent);
+  transform-origin: left;
+}
+
+/* revealed state */
+.footer-tagline.is-visible .footer-tagline__line {
+  transform: scaleX(1);
+}
+
+.footer-tagline.is-visible .footer-tagline__text {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .footer-tagline__line,
+  .footer-tagline__text {
+    transition: none;
+  }
+}
+
+/* footer tagline for willys */
+
+/* Why choose us section in index responsiveness fix */
+/* Why Choose Us: grid layout instead of carousel */
+.pbmit-element-miconheading-style-17 .pbmit-element-posts-wrapper {
+  justify-content: center;
+  /* centres the 5th card on its own row */
+}
+
+.pbmit-element-miconheading-style-17 .pbmit-element-posts-wrapper>article {
+  margin-bottom: 24px;
+  /* space between stacked cards */
+}
+/* Why choose us section in index responsiveness fix */
+/* ===== About page: Awards section ===== */
+.elementor-element-e1bcdfe > .elementor-container {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.elementor-element-e1bcdfe > .elementor-container > .elementor-column {
+  width: auto !important;
+  flex: 1 1 0;
+}
+
+.elementor-element-e1bcdfe .elementor-widget-wrap,
+.elementor-element-e1bcdfe .elementor-widget,
+.elementor-element-e1bcdfe .elementor-widget-container {
+  height: 100%;
+}
+
+/* the card */
+.elementor-element-e1bcdfe .pbmit-ihbox-style-10 {
+  position: relative;
+  height: 100%;
+  padding: 40px 24px 34px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid rgba(187, 154, 101, .35);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+/* gold line on top, slides in on hover */
+.elementor-element-e1bcdfe .pbmit-ihbox-style-10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #bb9a65;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .4s ease;
+}
+
+.elementor-element-e1bcdfe .pbmit-ihbox-style-10:hover {
+  transform: translateY(-8px);
+  border-color: #bb9a65;
+  box-shadow: 0 18px 40px rgba(60, 46, 37, .12);
+}
+
+.elementor-element-e1bcdfe .pbmit-ihbox-style-10:hover::before {
+  transform: scaleX(1);
+}
+
+/* round badge behind the icon */
+.elementor-element-e1bcdfe .pbmit-ihbox-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 22px;
+  background: #f8f4ec;
+  border-radius: 50%;
+  transition: background .35s ease, transform .35s ease;
+}
+
+.elementor-element-e1bcdfe .pbmit-ihbox-icon-wrapper img {
+  max-width: 58px;
+  height: auto;
+}
+
+.elementor-element-e1bcdfe .pbmit-ihbox-style-10:hover .pbmit-ihbox-icon-wrapper {
+  background: #efe5d3;
+  transform: scale(1.08);
+}
+
+/* award title */
+.elementor-element-e1bcdfe .pbmit-ihbox-style-10 .pbmit-element-title {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #3c2e25;
+}
+
+/* mobile: stack the cards */
+@media (max-width: 767px) {
+  .elementor-element-e1bcdfe > .elementor-container {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 20px 0;
+  }
+
+  .elementor-element-e1bcdfe > .elementor-container > .elementor-column {
+    width: 100% !important;
+    flex: none;
+  }
+}

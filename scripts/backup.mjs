@@ -1,0 +1,10 @@
+import { DatabaseSync, backup } from 'node:sqlite';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+if(process.env.DB_PROVIDER==='turso') throw new Error('Use Turso database export tools for remote backups. This script is local-only. See TURSO-SETUP.md.');
+if(!process.argv[2]) throw new Error('Usage: node scripts/backup.mjs /path/to/backup.sqlite');
+const db=new DatabaseSync(process.env.DB_PATH || path.join(root,'data/enquiries.sqlite'),{readOnly:true});
+await backup(db,process.argv[2]);
+db.close();
+console.log('Database backup completed. Keep it private.');

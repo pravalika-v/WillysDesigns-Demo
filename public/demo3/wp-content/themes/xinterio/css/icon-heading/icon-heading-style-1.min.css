@@ -1,0 +1,99 @@
+.pbmit-ihbox-style-1 {
+    border-bottom: 1px solid rgba(var(--pbmit-xinterio-blackish-color-rgb), .1);
+    padding-bottom: 20px
+}
+
+.pbmit-miconheading-style-1:last-child .pbmit-ihbox-style-1 {
+    border-bottom: unset
+}
+
+.pbmit-ihbox-style-1 .pbmit-ihbox-icon,
+.pbmit-ihbox-style-1 .pbmit-ihbox-svg {
+    margin-right: 5px
+}
+
+.rtl .pbmit-ihbox-style-1 .pbmit-ihbox-icon,
+.rtl .pbmit-ihbox-style-1 .pbmit-ihbox-svg {
+    margin: 0 0 0 5px
+}
+
+.pbmit-ihbox-style-1 .pbmit-ihbox-svg-wrapper,
+.pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper {
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--pbmit-xinterio-blackish-color)
+}
+
+.pbmit-ihbox-style-1 .pbmit-ihbox-svg-wrapper svg,
+.pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper svg {
+    fill: var(--pbmit-xinterio-blackish-color);
+    margin-bottom: 5px
+}
+
+.pbmit-ihbox-style-1 .pbmit-ihbox-icon-type-image img {
+    width: 60px;
+    height: auto
+}
+
+.pbmit-ihbox-style-1 .pbmit-element-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+
+.pbmit-ihbox-style-1 .pbmit-ihbox-contents {
+    transition: all 0.3s ease-in
+}
+
+.pbmit-ihbox-style-1:hover .pbmit-ihbox-contents {
+    transform: translate(1.5%, 0)
+}
+
+.rtl .pbmit-ihbox-style-1:hover .pbmit-ihbox-contents {
+    transform: translate(-1.5%, 0)
+}
+
+.pbmit-ihbox-style-1 .pbmit-element-subtitle {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 5px
+}
+
+.pbmit-ihbox-style-1-new .pbmit-ihbox-style-1 {
+    padding-bottom: 17px
+}
+
+.pbmit-ihbox-style-1-new .pbmit-ihbox-style-1 .pbmit-element-title,
+.pbmit-ihbox-style-1-new .pbmit-ihbox-style-1 .pbmit-ihbox-svg-wrapper,
+.pbmit-ihbox-style-1-new .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper {
+    font-size: 20px;
+    line-height: 28px
+}
+
+.pbmit-elementor-bg-color-blackish .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper,
+.pbmit-text-color-white .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper,
+.pbmit-elementor-bg-color-blackish .pbmit-ihbox-style-1 .pbmit-element-title,
+.pbmit-text-color-white .pbmit-ihbox-style-1 .pbmit-element-title {
+    color: var(--pbmit-xinterio-white-color)
+}
+
+.pbmit-elementor-bg-color-blackish .pbmit-ihbox-style-1,
+.pbmit-text-color-white .pbmit-ihbox-style-1 {
+    border-color: rgba(var(--pbmit-xinterio-white-color-rgb), .1)
+}
+
+.pbmit-elementor-bg-color-blackish .pbmit-ihbox-style-1 .pbmit-ihbox-svg-wrapper svg,
+.pbmit-text-color-white .pbmit-ihbox-style-1 .pbmit-ihbox-svg-wrapper svg,
+.pbmit-elementor-bg-color-blackish .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper svg,
+.pbmit-text-color-white .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper svg {
+    fill: var(--pbmit-xinterio-white-color)
+}
+
+@media(max-width:767px) {
+    .pbmit-ihbox-style-1 .pbmit-ihbox-svg-wrapper,
+    .pbmit-ihbox-style-1 .pbmit-ihbox-icon-wrapper,
+    .pbmit-ihbox-style-1 .pbmit-element-title {
+        font-size: 18px;
+        line-height: 20px
+    }
+}
